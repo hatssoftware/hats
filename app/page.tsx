@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { FaGamepad, FaGithub, FaDiscord } from 'react-icons/fa';
+import { FaGamepad, FaGithub, FaDiscord, FaInstagram } from 'react-icons/fa';
 import { MdEmail, MdLocationOn } from 'react-icons/md';
 import { BiSolidJoystickAlt } from 'react-icons/bi';
 import { BsArrowRightShort, BsStars } from 'react-icons/bs';
@@ -16,7 +16,6 @@ export default function Home() {
           <div className="animate-fade-in-up">
             <div className="relative inline-block">
               <FaGamepad className="mx-auto text-5xl sm:text-7xl mb-6 sm:mb-8 text-purple-500 animate-float" />
-              <div className="absolute -inset-1 blur-3xl bg-purple-500/30 -z-10" />
             </div>
 
             <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight">
@@ -32,13 +31,13 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
               <a href="#games"
                 className="group px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full 
-                          hover:opacity-90 transition-all duration-300 flex items-center justify-center">
+                          hover:opacity-90 transition-all duration-150 flex items-center justify-center">
                 Explore Our Games
-                <BsArrowRightShort className="ml-2 text-xl sm:text-2xl group-hover:translate-x-1 transition-transform" />
+                <BsArrowRightShort className="ml-2 text-xl sm:text-2xl group-hover:translate-x-1 transition-transform duration-150" />
               </a>
               <a href="#about"
                 className="px-6 sm:px-8 py-3 sm:py-4 border border-purple-500/30 rounded-full 
-                          hover:bg-purple-500/10 transition-all duration-300">
+                          hover:bg-purple-500/10 transition-all duration-150">
                 About Us
               </a>
             </div>
@@ -50,12 +49,12 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex justify-center gap-12 sm:gap-16 items-center">
             <div className="group relative">
-              <SiUnrealengine className="text-4xl sm:text-5xl text-gray-400 group-hover:text-white transition-colors duration-300" />
-              <div className="absolute -inset-2 bg-purple-500/20 rounded-full blur opacity-0 group-hover:opacity-100 transition-opacity" />
+              <SiUnrealengine className="text-4xl sm:text-5xl text-gray-400 group-hover:text-white transition-colors duration-150" />
+              <div className="absolute -inset-2 bg-purple-500/20 rounded-full blur opacity-0 group-hover:opacity-100 transition-opacity duration-150" />
             </div>
             <div className="group relative">
-              <SiUnity className="text-4xl sm:text-5xl text-gray-400 group-hover:text-white transition-colors duration-300" />
-              <div className="absolute -inset-2 bg-purple-500/20 rounded-full blur opacity-0 group-hover:opacity-100 transition-opacity" />
+              <SiUnity className="text-4xl sm:text-5xl text-gray-400 group-hover:text-white transition-colors duration-150" />
+              <div className="absolute -inset-2 bg-purple-500/20 rounded-full blur opacity-0 group-hover:opacity-100 transition-opacity duration-150" />
             </div>
           </div>
         </div>
@@ -78,12 +77,12 @@ export default function Home() {
               { name: 'jsemharry', role: 'UI Designer & Developer', image: 'https://github.com/jsemharry7.png' },
               { name: 'adyze', role: '3D Artist', image: 'https://github.com/adyze.png' },
               { name: 'toncek.r', role: 'Game Developer', image: 'https://github.com/toncekr.png' },
-              { name: 'steveruu', role: 'Game Developer', image: 'https://github.com/steveruu.png' },
+              { name: 'steveruu', role: 'Game Developer & Audio Designer', image: 'https://github.com/steveruu.png' },
             ].map((member) => (
               <div key={member.name}
                 className="group bg-gradient-to-b from-gray-800/50 to-gray-900/50 
                           backdrop-blur-xl rounded-2xl p-8 text-center
-                          border border-gray-800 transition-all duration-500
+                          border border-gray-800 transition-all duration-200
                           hover:border-purple-500/20 hover:shadow-[0_0_30px_-5px_rgba(147,51,234,0.1)]">
                 <div className="relative mb-6">
                   <div className="absolute inset-0 rounded-full bg-purple-500/10 blur-xl 
@@ -95,7 +94,7 @@ export default function Home() {
                     height={120}
                     className="relative w-30 h-30 mx-auto rounded-full object-cover 
                               ring-2 ring-purple-500/20 group-hover:ring-purple-500/40 
-                              transition-all duration-300"
+                              transition-all duration-200"
                   />
                 </div>
 
@@ -165,7 +164,7 @@ export default function Home() {
           <div className="max-w-5xl mx-auto">
             <div className="group bg-gradient-to-br from-gray-800/50 to-gray-900/50 
                           backdrop-blur-xl rounded-2xl sm:rounded-3xl overflow-hidden
-                          border border-gray-800 transition-all duration-500
+                          border border-gray-800 transition-all duration-200
                           hover:border-purple-500/20 hover:shadow-[0_0_50px_-12px_rgba(147,51,234,0.15)]">
               <div className="aspect-video relative">
                 <Image
@@ -214,17 +213,21 @@ export default function Home() {
               </div>
 
               <div className="flex gap-6">
-                <a href="mailto:contact@hatssoftware.com"
-                  className="text-gray-400 hover:text-purple-400 transition-colors duration-300">
+                <a href="mailto:lol"
+                  className="text-gray-400 hover:text-purple-400 transition-colors duration-150">
                   <MdEmail className="text-2xl" />
                 </a>
                 <a href="https://github.com/hatssoftware"
-                  className="text-gray-400 hover:text-purple-400 transition-colors duration-300">
+                  className="text-gray-400 hover:text-purple-400 transition-colors duration-150">
                   <FaGithub className="text-2xl" />
                 </a>
                 <a href="https://discord.gg/hatssoftware"
-                  className="text-gray-400 hover:text-purple-400 transition-colors duration-300">
+                  className="text-gray-400 hover:text-purple-400 transition-colors duration-150">
                   <FaDiscord className="text-2xl" />
+                </a>
+                <a href="https://www.instagram.com/hatssoftware"
+                  className="text-gray-400 hover:text-purple-400 transition-colors duration-150">
+                  <FaInstagram className="text-2xl" />
                 </a>
               </div>
             </div>

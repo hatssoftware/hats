@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "HATS Software | Innovative Game Development Studio",
     description: "Crafting innovative gaming experiences from the heart of Liberec",
-    images: ['/og-image.jpg'],
+    
     type: 'website',
   },
 };
