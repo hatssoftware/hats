@@ -49,12 +49,10 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex justify-center gap-12 sm:gap-16 items-center">
             <div className="group relative">
-              <SiUnrealengine className="text-4xl sm:text-5xl text-gray-400 group-hover:text-white transition-colors duration-150" />
-              <div className="absolute -inset-2 bg-purple-500/20 rounded-full blur opacity-0 group-hover:opacity-100 transition-opacity duration-150" />
+              <SiUnity className="text-4xl sm:text-5xl text-gray-400  transition-colors duration-150" />
             </div>
             <div className="group relative">
-              <SiUnity className="text-4xl sm:text-5xl text-gray-400 group-hover:text-white transition-colors duration-150" />
-              <div className="absolute -inset-2 bg-purple-500/20 rounded-full blur opacity-0 group-hover:opacity-100 transition-opacity duration-150" />
+              <SiUnrealengine className="text-4xl sm:text-5xl text-gray-400  transition-colors duration-150" />
             </div>
           </div>
         </div>
