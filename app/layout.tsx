@@ -9,15 +9,21 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "HATS Software | Innovative Game Development Studio",
+  title: "HATS Software",
   description: "Crafting innovative gaming experiences from the heart of Liberec, Czech Republic. Indie game development studio focused on unique multiplayer experiences.",
   keywords: ["game development", "indie games", "Czech Republic", "HATS Software", "gaming studio"],
   authors: [{ name: "HATS Software Team" }],
   openGraph: {
     title: "HATS Software | Innovative Game Development Studio",
     description: "Crafting innovative gaming experiences from the heart of Liberec",
-    
     type: 'website',
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@hatssoftware",
+    creator: "@hatssoftware",
+    title: "HATS Software",
+    description: "Crafting innovative gaming experiences from the heart of Liberec",
   },
 };
 
@@ -29,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${spaceGrotesk.variable}`}>
       <head>
-        <meta name="theme-color" content="#0a0a0a" />
+        <meta name="theme-color" content="#c084fc" />
       </head>
       <body className="antialiased font-sans selection:bg-purple-500/30 selection:text-white">
         <div className="fixed inset-0 -z-10 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,50,255,0.3),rgba(255,255,255,0))]" />

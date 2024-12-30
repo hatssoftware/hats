@@ -16,7 +16,7 @@
         @apply bg-[rgb(var(--background))] text-[rgb(var(--foreground))];
     }
 
-    /* Custom scrollbar */
+    /* Custom scrollbar - Webkit browsers */
     ::-webkit-scrollbar {
         width: 10px;
     }
@@ -31,6 +31,13 @@
 
     ::-webkit-scrollbar-thumb:hover {
         @apply bg-purple-800;
+    }
+    /* Custom scrollbar - Firefox */
+    @-moz-document url-prefix() {
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: theme("colors.purple.900") theme("colors.gray.900");
+        }
     }
 }
 
